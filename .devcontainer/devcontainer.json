@@ -1,0 +1,13 @@
+{
+  "name": "School Management System",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "./setup.sh",
+  "containerEnv": {
+    "PATH": "/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}

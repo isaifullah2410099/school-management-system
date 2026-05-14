@@ -132,8 +132,10 @@ Then start the PHP server from the web root:
 
 ```bash
 cd school-management-system-main/school-management-system-main
-php -S 0.0.0.0:8000
+/usr/bin/php -S 0.0.0.0:8000
 ```
+
+If you still see the mysqli extension error, run `php -m | grep -i mysqli` and confirm the `/usr/bin/php` binary is used.
 
 Open the forwarded port `8000` in Codespaces or visit `http://127.0.0.1:8000` locally.
 

@@ -11,6 +11,13 @@ sudo apt-get update
 echo "==> Installing PHP and MySQL dependencies"
 sudo apt-get install -y php php-cli php-mysql default-mysql-server
 
+# Use the system PHP binary to ensure mysqli extension is available
+sudo update-alternatives --install /usr/bin/php php /usr/bin/php 1 >/dev/null 2>&1 || true
+sudo update-alternatives --set php /usr/bin/php >/dev/null 2>&1 || true
+
+php -v
+php -m | grep -i mysqli || true
+
 echo "==> Starting MySQL service"
 sudo service mysql start || true
 
