@@ -119,7 +119,25 @@ PHP School management system developed for schools or small institutes. You can 
    <b> visit on the url : <i>http://localhost/school-management-system</i> </b>
    <br> Visit to the given URL to see the running website
 
-## 🔐 Emails and Passwords
+## � Codespaces / Linux Setup
+
+If you open this repository in a new GitHub Codespace or Linux environment, run the setup script first:
+
+```bash
+cd /workspaces/school-management-system
+./setup.sh
+```
+
+Then start the PHP server from the web root:
+
+```bash
+cd school-management-system-main/school-management-system-main
+php -S 0.0.0.0:8000
+```
+
+Open the forwarded port `8000` in Codespaces or visit `http://127.0.0.1:8000` locally.
+
+## �🔐 Emails and Passwords
 
 The project comes with default user on each panel you can remove and update them also.<br>
 The **Credentials** for default logins are

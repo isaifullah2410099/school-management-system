@@ -59,6 +59,9 @@ function submitForm(event) {
 
     fetch('login-backend.php', {
         method: 'POST',
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        },
         body: formData
     })
     .then(response =>{
@@ -198,6 +201,12 @@ document.getElementById('forgotPassword-form').addEventListener('submit', (event
     
     fetch("forgotPassword.php", {
         method: 'POST',
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        },
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        },
         body: sendData,
     })
     .then(response => response.json())
@@ -254,6 +263,9 @@ document.getElementById("otpVarification-form").addEventListener('submit', (even
 
     fetch("forgotPassword.php", {
         method: 'POST',
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        },
         body: sendData,
     })
     .then(response => response.json())
@@ -362,6 +374,9 @@ document.getElementById('createNewPassword-form').addEventListener('submit', (ev
         
             fetch("forgotPassword.php", {
                 method: 'POST',
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
                 body: sendData,
             })
             .then(response => response.json())
