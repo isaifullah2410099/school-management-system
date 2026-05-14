@@ -1,7 +1,7 @@
 <?php
-    $server = "localhost";
+    $server = "127.0.0.1";
    
-    $user = "root";
+    $user = "sms_user";
     $password = "";
     $db = "_sms";
     
